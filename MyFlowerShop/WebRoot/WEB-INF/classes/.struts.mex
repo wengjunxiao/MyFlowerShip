@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="default" location="543,270" size="8765,644">
+    <action name="login" location="8605,47" size="150,62">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="index.jsp" />
+      </result>
+      <result name="input">
+        <resourceEdge source="input" routing="0" target="index.jsp" />
+      </result>
+    </action>
+    <action name="register" location="8605,152" size="150,62">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="registerSucceed.jsp" />
+      </result>
+      <result name="error">
+        <resourceEdge source="error" routing="0" target="register.jsp" />
+      </result>
+    </action>
+    <action name="detail" location="8360,162" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="1.jsp" />
+      </result>
+    </action>
+    <action name="cart" location="8115,152" size="150,62">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="cart.jsp" />
+      </result>
+      <result name="error">
+        <resourceEdge source="error" routing="0" target="index.jsp" />
+      </result>
+    </action>
+    <action name="deleteGoods" location="7870,162" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="cart.jsp" />
+      </result>
+    </action>
+    <action name="leaveMessage" location="7520,152" size="150,62">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="language.jsp" />
+      </result>
+      <result name="limitted">
+        <resourceEdge source="limitted" routing="0" target="language.jsp" />
+      </result>
+    </action>
+    <action name="produceInfo" location="7275,162" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="produceInfo.jsp" />
+      </result>
+    </action>
+    <action name="produceDetails" location="7030,162" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="produceDetails.jsp" />
+      </result>
+    </action>
+    <action name="generateOrder" location="6645,152" size="150,62">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="OrderInfo.jsp" />
+      </result>
+      <result name="error">
+        <resourceEdge source="error" routing="0" target="cart.jsp" />
+      </result>
+    </action>
+    <action name="myAccount" location="6400,152" size="150,62">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="redirect.jsp" />
+      </result>
+      <result name="error">
+        <resourceEdge source="error" routing="0" target="index.jsp" />
+      </result>
+    </action>
+    <action name="orderHistory" location="6155,162" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="orderHistory.jsp" />
+      </result>
+    </action>
+    <action name="orderDetail" location="5910,162" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="orderDetail.jsp" />
+      </result>
+    </action>
+    <action name="logout" location="5665,162" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="index.jsp" />
+      </result>
+    </action>
+    <action name="adminLogin" location="5350,152" size="150,62">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="index.jsp" />
+      </result>
+      <result name="error">
+        <resourceEdge source="error" routing="0" target="CheckLogin.jsp" />
+      </result>
+    </action>
+    <action name="addUser" location="5000,152" size="150,62">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="addUsers_menu.jsp" />
+      </result>
+      <result name="error">
+        <resourceEdge source="error" routing="0" target="addUsers_menu.jsp" />
+      </result>
+    </action>
+    <action name="viewAllusers" location="4755,162" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="viewAllusers.jsp" />
+      </result>
+    </action>
+    <action name="deleteUser" location="4510,162" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="viewAllusers.jsp" />
+      </result>
+    </action>
+    <action name="queryUser" location="4265,152" size="150,62">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="viewAllusers.jsp" />
+      </result>
+      <result name="error">
+        <resourceEdge source="error" routing="0" target="viewUsers_menu.jsp" />
+      </result>
+    </action>
+    <action name="addOrder" location="4020,152" size="150,62">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="addOrder_menu.jsp" />
+      </result>
+      <result name="error">
+        <resourceEdge source="error" routing="0" target="addOrder_menu.jsp" />
+      </result>
+    </action>
+    <action name="viewAllOrders" location="3740,162" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="viewAllOrders.jsp" />
+      </result>
+    </action>
+    <action name="deleteOrder" location="3495,162" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="viewAllOrders.jsp" />
+      </result>
+    </action>
+    <action name="queryOrder" location="3250,152" size="150,62">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="viewAllOrders.jsp" />
+      </result>
+      <result name="error">
+        <resourceEdge source="error" routing="0" target="viewOrder_menu.jsp" />
+      </result>
+    </action>
+    <action name="addSort" location="3005,152" size="150,62">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="addSort_menu.jsp" />
+      </result>
+      <result name="error">
+        <resourceEdge source="error" routing="0" target="addSort_menu.jsp" />
+      </result>
+    </action>
+    <action name="addGood" location="2725,152" size="150,62">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="addGoods_menu.jsp" />
+      </result>
+      <result name="error">
+        <resourceEdge source="error" routing="0" target="addGoods_menu.jsp" />
+      </result>
+    </action>
+    <action name="viewAllGoods" location="2445,162" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="viewAllgoods.jsp" />
+      </result>
+    </action>
+    <action name="queryGood" location="2200,162" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="viewAllgoods.jsp" />
+      </result>
+    </action>
+    <action name="deleteGood" location="1955,162" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="viewAllgoods.jsp" />
+      </result>
+    </action>
+    <action name="addProduce" location="1675,152" size="150,62">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="addProduce_menu.jsp" />
+      </result>
+      <result name="error">
+        <resourceEdge source="error" routing="0" target="addProduce_menu.jsp" />
+      </result>
+    </action>
+    <action name="viewAllProduce" location="1430,162" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="viewAllProduce.jsp" />
+      </result>
+    </action>
+    <action name="queryProduce" location="1185,162" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="viewAllProduce.jsp" />
+      </result>
+    </action>
+    <action name="deleteProduce" location="940,162" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="viewAllProduce.jsp" />
+      </result>
+    </action>
+    <action name="addLeaveLauguage" location="695,162" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="addLeaveLauguage_menu.jsp" />
+      </result>
+    </action>
+    <action name="viewAllLeaveMessage" location="450,162" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="viewAllLeaveLanguage.jsp" />
+      </result>
+    </action>
+    <action name="deleteLeaveMessage" location="65,162" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="viewAllLeaveLanguage.jsp" />
+      </result>
+    </action>
+    <action name="queryLeaveMessage" location="65,267" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="viewAllLeaveLanguage.jsp" />
+      </result>
+    </action>
+    <action name="viewAllAdmin" location="65,372" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="viewAllAdmin.jsp" />
+      </result>
+    </action>
+    <action name="deleteAdmin" location="65,477" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="viewAllAdmin.jsp" />
+      </result>
+    </action>
+    <action name="addAdmin" location="65,572" size="150,62">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="addAdmin_menu.jsp" />
+      </result>
+      <result name="error">
+        <resourceEdge source="error" routing="0" target="addAdmin_menu.jsp" />
+      </result>
+    </action>
+    <action name="adminLogout" location="310,582" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="index.jsp" />
+      </result>
+    </action>
+  </package>
+  <webResource name="index.jsp" path="/index.jsp" location="6233,10" size="150,55" />
+  <webResource name="registerSucceed.jsp" path="/register/registerSucceed.jsp" location="9125,1095" size="150,55" />
+  <webResource name="register.jsp" path="/register/register.jsp" location="9465,395" size="150,55" />
+  <webResource name="1.jsp" path="/tourist/1.jsp" location="8926,1095" size="150,55" />
+  <webResource name="cart.jsp" path="/register/cart.jsp" location="8425,1200" size="150,55" />
+  <webResource name="language.jsp" path="/tourist/language.jsp" location="8204,1095" size="150,55" />
+  <webResource name="produceInfo.jsp" path="/tourist/produceInfo.jsp" location="7810,1095" size="150,55" />
+  <webResource name="produceDetails.jsp" path="/tourist/produceDetails.jsp" location="7557,1095" size="150,55" />
+  <webResource name="OrderInfo.jsp" path="/register/OrderInfo.jsp" location="7324,1095" size="150,55" />
+  <webResource name="redirect.jsp" path="/redirect.jsp" location="6968,1095" size="150,55" />
+  <webResource name="orderHistory.jsp" path="/register/orderHistory.jsp" location="6686,1095" size="150,55" />
+  <webResource name="orderDetail.jsp" path="/register/orderDetail.jsp" location="6444,1095" size="150,55" />
+  <webResource name="index.jsp" path="/admin/index.jsp" location="5905,1095" size="150,55" />
+  <webResource name="CheckLogin.jsp" path="./CheckLogin.jsp" location="6082,1095" size="150,55" />
+  <webResource name="addUsers_menu.jsp" path="/admin/addUsers_menu.jsp" location="5664,1095" size="150,55" />
+  <webResource name="viewAllusers.jsp" path="/admin/viewAllusers.jsp" location="5045,115" size="150,55" />
+  <webResource name="viewUsers_menu.jsp" path="/admin/viewUsers_menu.jsp" location="4786,1095" size="150,55" />
+  <webResource name="addOrder_menu.jsp" path="/admin/addOrder_menu.jsp" location="4544,115" size="150,55" />
+  <webResource name="viewAllOrders.jsp" path="/admin/viewAllOrders.jsp" location="4026,115" size="150,55" />
+  <webResource name="viewOrder_menu.jsp" path="/admin/viewOrder_menu.jsp" location="3771,1095" size="150,55" />
+  <webResource name="addSort_menu.jsp" path="/admin/addSort_menu.jsp" location="3533,115" size="150,55" />
+  <webResource name="addGoods_menu.jsp" path="/admin/addGoods_menu.jsp" location="3247,115" size="150,55" />
+  <webResource name="viewAllgoods.jsp" path="/admin/viewAllgoods.jsp" location="2733,115" size="150,55" />
+  <webResource name="addProduce_menu.jsp" path="/admin/addProduce_menu.jsp" location="2332,115" size="150,55" />
+  <webResource name="viewAllProduce.jsp" path="/admin/viewAllProduce.jsp" location="1712,115" size="150,55" />
+  <webResource name="addLeaveLauguage_menu.jsp" path="/admin/addLeaveLauguage_menu.jsp" location="1190,1095" size="150,55" />
+  <webResource name="viewAllLeaveLanguage.jsp" path="/admin/viewAllLeaveLanguage.jsp" location="10,500" size="150,55" />
+  <webResource name="viewAllAdmin.jsp" path="/admin/viewAllAdmin.jsp" location="317,605" size="150,55" />
+  <webResource name="addAdmin_menu.jsp" path="/admin/addAdmin_menu.jsp" location="307,815" size="150,55" />
+</Struts2Diagram>
+

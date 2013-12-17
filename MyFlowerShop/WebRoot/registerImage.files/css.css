@@ -1,0 +1,18 @@
+UNKNOWN {
+	FONT-SIZE: 9pt; COLOR: #353535; LINE-HEIGHT: 120%
+}
+BODY {
+	FONT-SIZE: 9pt; LINE-HEIGHT: 120%
+}
+A:link {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+A:active {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+A:hover {
+	RIGHT: 0px; COLOR: #336699; POSITION: relative; TOP: 1px; TEXT-DECORATION: none
+}

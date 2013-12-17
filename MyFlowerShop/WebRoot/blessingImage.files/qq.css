@@ -1,0 +1,27 @@
+BODY {
+	FONT-SIZE: 9pt; FONT-FAMILY: "ËÎÌו"
+}
+A.qqa:link {
+	COLOR: red; TEXT-DECORATION: none
+}
+A.qqa:visited {
+	COLOR: red; TEXT-DECORATION: none
+}
+A.qqa:active {
+	COLOR: red; TEXT-DECORATION: none
+}
+A.qqa:hover {
+	COLOR: blue; TEXT-DECORATION: none
+}
+A.qqb:link {
+	COLOR: black; TEXT-DECORATION: none
+}
+A.qqb:visited {
+	COLOR: black; TEXT-DECORATION: none
+}
+A.qqb:active {
+	COLOR: black; TEXT-DECORATION: none
+}
+A.qqb:hover {
+	COLOR: blue; TEXT-DECORATION: none
+}

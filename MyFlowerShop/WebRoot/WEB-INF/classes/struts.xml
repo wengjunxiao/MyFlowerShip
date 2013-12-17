@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+   "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+   "http://struts.apache.org/dtds/struts-2.0.dtd">
+   <struts>
+   	<constant name="struts.custom.i18n.resources" value="MessageResources"></constant>
+   	<constant name="struts.enable.DynamicMethodInvocation" value="true"></constant>
+   	
+   	<package name="default" extends="struts-default">
+   		<!-- 配置action -->
+   		<action name="login" class="com.flowerShop.action.LoginAction" method="userLogin">
+			<result name="success">/index.jsp</result>
+			<result name="input">/index.jsp</result>
+   		</action>
+   		<!-- 用户注册 -->
+   		<action name="register" class="com.flowerShop.action.UserAction" method="register">
+   			<result name="success">/register/registerSucceed.jsp</result>
+   			<result name="error">/register/register.jsp</result>
+   		</action>
+   		<!-- 查看详细信息 -->
+   		<action name="detail" class="com.flowerShop.action.GoodAction" method="detail">
+   			<result name="success">/tourist/1.jsp</result>
+   		</action>
+   		<!-- 查看购物篮 -->
+   		<action name="cart" class="com.flowerShop.action.GoodAction" method="cart">
+   			<result name="success">/register/cart.jsp</result>
+   			<result name="error">/index.jsp</result>
+   		</action>
+   		<!-- 删除购物篮中的货物  -->
+   		<action name="deleteGoods" class="com.flowerShop.action.GoodAction" method="deleteGood">
+   			<result name="success">/register/cart.jsp</result>
+   		</action>
+   		<!-- 留言 -->
+   		<action name="leaveMessage" class="com.flowerShop.action.LeaveMessageAction" method="leaveMessage">
+   			<result name="success">/tourist/language.jsp</result>
+   			<result name="limitted">/tourist/language.jsp</result>
+   		</action>
+   		<!-- 厂商信息 -->
+   		<action name="produceInfo" class="com.flowerShop.action.ProduceAction" method="info">
+   			<result name="success">/tourist/produceInfo.jsp</result>
+   		</action>
+   		<!-- 查看厂商详细信息 -->
+   		<action name="produceDetails" class="com.flowerShop.action.ProduceAction" method="detail">
+   			<result name="success">/tourist/produceDetails.jsp</result>
+   		</action>
+   		<!-- 生成订单action -->
+   		<action name="generateOrder" class="com.flowerShop.action.OrderAction" method="generate">
+   			<result name="success">/register/OrderInfo.jsp</result>
+   			<result name="error">/register/cart.jsp</result>
+   		</action>
+   		<!-- 查看我的账户 -->
+   		<action name="myAccount" class="com.flowerShop.action.UserAction" method="myAccount">
+   			<result name="success">/redirect.jsp</result>
+   			<result name="error">/index.jsp</result>
+   		</action>
+   		<!-- 查看历史账单 -->
+   		<action name="orderHistory" class="com.flowerShop.action.OrderAction" method="history">
+   			<result name="success">/register/orderHistory.jsp</result>
+   		</action>
+   		<!-- 查看详细历史账单 -->
+   		<action name="orderDetail" class="com.flowerShop.action.OrderAction" method="historyDetail">
+   			<result name="success">/register/orderDetail.jsp</result>
+   		</action>
+   		<!-- 注销 -->
+   		<action name="logout" class="com.flowerShop.action.LogoutAction" method="userLogout">
+   			<result name="success">/index.jsp</result>
+   		</action>
+   		
+   		
+   		<!-- 管理员登录验证 -->
+   		<action name="adminLogin" class="com.flowerShop.action.LoginAction" method="adminLogin">
+   			<result name="success">/admin/index.jsp</result>
+   			<result name="error">./CheckLogin.jsp</result>
+   		</action>
+   		
+   		<!-- 添加用户 -->
+   		<action name="addUser" class="com.flowerShop.action.UserAction" method="add">
+   			<result name="success">/admin/addUsers_menu.jsp</result>
+   			<result name="error">/admin/addUsers_menu.jsp</result>
+   		</action>
+   		<!-- 查看所有注册用户 -->
+   		<action name="viewAllusers" class="com.flowerShop.action.UserAction" method="viewAll">
+   			<result name="success">/admin/viewAllusers.jsp</result>
+   		</action>
+   		<!-- 删除用户 -->
+   		<action name="deleteUser" class="com.flowerShop.action.UserAction" method="delete">
+   			<result name="success">/admin/viewAllusers.jsp</result>
+   		</action>
+   		<!-- 查询用户 -->
+   		<action name="queryUser" class="com.flowerShop.action.UserAction" method="query">
+   			<result name="success">/admin/viewAllusers.jsp</result>
+   			<result name="error">/admin/viewUsers_menu.jsp</result>
+   		</action>
+   		<!-- 增加订单 -->
+   		<action name="addOrder" class="com.flowerShop.action.OrderAction" method="add">
+   			<result name="success">/admin/addOrder_menu.jsp</result>
+   			<result name="error">/admin/addOrder_menu.jsp</result>
+   		</action>
+   		<!-- 查看所有订单 -->
+   		<action name="viewAllOrders" class="com.flowerShop.action.OrderAction" method="viewAll">
+   			<result name="success">/admin/viewAllOrders.jsp</result>
+   		</action>
+   		<!-- 删除订单 -->
+   		<action name="deleteOrder" class="com.flowerShop.action.OrderAction" method="delete">
+   			<result name="success">/admin/viewAllOrders.jsp</result>
+   		</action>
+   		<!-- 查找订单 -->
+   		<action name="queryOrder" class="com.flowerShop.action.OrderAction" method="query">
+   			<result name="success">/admin/viewAllOrders.jsp</result>
+   			<result name="error">/admin/viewOrder_menu.jsp</result>
+   		</action>
+   		<!-- 增加类别 -->
+   		<action name="addSort" class="com.flowerShop.action.GoodAction" method="addSort">
+   			<result name="success">/admin/addSort_menu.jsp</result>
+   			<result name="error">/admin/addSort_menu.jsp</result>
+   		</action>
+   		<!-- 增加货物 -->
+   		<action name="addGood" class="com.flowerShop.action.GoodAction" method="addGood">
+   			<result name="success">/admin/addGoods_menu.jsp</result>
+   			<result name="error">/admin/addGoods_menu.jsp</result>
+   		</action>
+   		<!-- 查看所有货物 -->
+   		<action name="viewAllGoods" class="com.flowerShop.action.GoodAction" method="viewAll">
+   			<result name="success">/admin/viewAllgoods.jsp</result>
+   		</action>
+   		<!-- 查找货物 -->
+   		<action name="queryGood" class="com.flowerShop.action.GoodAction" method="query">
+   			<result name="success">/admin/viewAllgoods.jsp</result>
+   		</action>
+   		<!-- 删除货物 -->
+   		<action name="deleteGood" class="com.flowerShop.action.GoodAction" method="delete">
+   			<result name="success">/admin/viewAllgoods.jsp</result>
+   		</action>
+   		<!-- 增加厂商 -->
+   		<action name="addProduce" class="com.flowerShop.action.ProduceAction" method="add">
+   			<result name="success">/admin/addProduce_menu.jsp</result>
+   			<result name="error">/admin/addProduce_menu.jsp</result>
+   		</action>
+   		<!-- 查看全部厂商 -->
+   		<action name="viewAllProduce" class="com.flowerShop.action.ProduceAction" method="viewAll">
+   			<result name="success">/admin/viewAllProduce.jsp</result>
+   		</action>
+   		<!-- 查询厂商 -->
+   		<action name="queryProduce" class="com.flowerShop.action.ProduceAction" method="query">
+   			<result name="success">/admin/viewAllProduce.jsp</result>
+   		</action>
+   		<!-- 删除厂商 -->
+   		<action name="deleteProduce" class="com.flowerShop.action.ProduceAction" method="delete">
+   			<result name="success">/admin/viewAllProduce.jsp</result>
+   		</action>
+   		<!-- 增加留言 -->
+   		<action name="addLeaveLauguage" class="com.flowerShop.action.LeaveMessageAction" method="add">
+   			<result name="success">/admin/addLeaveLauguage_menu.jsp</result>
+   		</action>
+   		<!-- 查看所有留言 -->
+   		<action name="viewAllLeaveMessage" class="com.flowerShop.action.LeaveMessageAction" method="viewAll">
+   			<result name="success">/admin/viewAllLeaveLanguage.jsp</result>
+   		</action>
+   		<!-- 删除留言 -->
+   		<action name="deleteLeaveMessage" class="com.flowerShop.action.LeaveMessageAction" method="delete">
+   			<result name="success">/admin/viewAllLeaveLanguage.jsp</result>
+   		</action>
+   		<!-- 查询留言 -->
+   		<action name="queryLeaveMessage" class="com.flowerShop.action.LeaveMessageAction" method="query">
+   			<result name="success">/admin/viewAllLeaveLanguage.jsp</result>
+   		</action>
+   		<!-- 查看所有管理员 -->
+   			<action name="viewAllAdmin" class="com.flowerShop.action.AdminAction" method="viewAll">
+   				<result name="success">/admin/viewAllAdmin.jsp</result>
+   			</action>
+   		<!-- 删除管理员 -->
+   			<action name="deleteAdmin" class="com.flowerShop.action.AdminAction" method="delete">
+   				<result name="success">/admin/viewAllAdmin.jsp</result>
+   			</action>
+   		<!-- 增加管理员-->
+   			<action name="addAdmin" class="com.flowerShop.action.AdminAction" method="add">
+   				<result name="success">/admin/addAdmin_menu.jsp</result>
+   				<result name="error">/admin/addAdmin_menu.jsp</result>
+   			</action>
+   		<!-- 管理员退出 -->
+   		<action name="adminLogout" class="com.flowerShop.action.LogoutAction" method="adminLogout">
+   			<result name="success">/index.jsp</result>
+   		</action>
+   	</package>
+   </struts>
